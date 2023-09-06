@@ -20,7 +20,7 @@ spec:
             - containerPort: 8080
 
 
-  ==============================
+  ---
 
 
 apiVersion: v1
