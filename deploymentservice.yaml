@@ -17,7 +17,7 @@ spec:
           image: supraja13/reactapp
           imagePullPolicy: Always # Pull the latest image
           ports:
-            - containerPort: 8080
+            - containerPort: 5000
 ---
 apiVersion: v1
 kind: Service
@@ -28,6 +28,7 @@ spec:
     app: react-app
   ports:
     - protocol: "TCP"
-      port: 8080
-      targetPort: 8080
+      port: 5000
+      
+      targetPort: 5000
   type: NodePort
