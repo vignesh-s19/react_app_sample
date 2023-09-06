@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: react-app # Corrected the indentation here
-          image: supraja13/devops-integration
+          image: supraja13/reactapp
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
