@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: react-app-deployment
@@ -13,7 +13,7 @@ spec:
         app: react-app
     spec:
       containers:
-        - name: react-app # Corrected the indentation here
+        - name: react-app
           image: supraja13/reactapp
           imagePullPolicy: IfNotPresent
           ports:
